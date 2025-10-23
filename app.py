@@ -8,15 +8,6 @@ import leafmap.foliumap as leafmap
 st.set_page_config(page_title="Image Footprints Catalogue", layout="wide")
 st.title("🛰️ Sphere Data Catalogue Dashboard")
 
-# # --- Database connection ---
-# db_user = "asmita"
-# db_pass = "asmita123"
-# db_host = "34.136.145.76"
-# db_port = "5432"
-# db_name = "qgis_labeling_db"
-# # DB connection
-# engine = create_engine(f"postgresql://{db_user}:{db_pass}@{db_host}:{db_port}/{db_name}")
-
 db = st.secrets["postgres"]
 
 engine = create_engine(
