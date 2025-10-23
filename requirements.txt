@@ -1,0 +1,9 @@
+streamlit
+geopandas
+sqlalchemy
+psycopg2-binary
+leafmap
+gspread
+oauth2client
+pandas
+pyyaml
