@@ -4,3 +4,4 @@ config/db_config.yaml
 *.json
 .streamlit/
 *.pyc
+*.devcontainer/
