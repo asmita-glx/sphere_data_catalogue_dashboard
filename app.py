@@ -60,7 +60,7 @@ st.sidebar.subheader("📏 Resolution Range (m)")
 res_ranges = {
     "0.3–0.5 m": (0.3, 0.5),
     "0.6–1.0 m": (0.6, 1.0),
-    "> 1.0 m": (1.0, 10.0)
+    "1.0 m & above": (1.0, 10.0)
 }
 
 selected_res = []
@@ -101,7 +101,7 @@ if gdf.empty:
 # ----------------------------------------------------
 m = leafmap.Map(center=[20, 78], zoom=5, basemap="CartoDB.DarkMatter")
 m.add_basemap("CartoDB.DarkMatter")
-m.add_basemap("SATELLITE")
+# m.add_basemap("SATELLITE")
 
 # Sea-green style
 style = {
@@ -120,4 +120,4 @@ m.add_gdf(
 # ----------------------------------------------------
 # Render Map
 # ----------------------------------------------------
-m.to_streamlit(height=800)
+m.to_streamlit(height=700)
